@@ -24,10 +24,10 @@ import Lottery from './components/Lottery';
 import Cockfight from './components/Cockfight';
 import CrashGame from './components/CrashGame';
 import Poker from './components/Poker';
-import Arcade  from './components/Arcade';
-import Keno  from './components/Keno';
-import ESport  from './components/ESport';
-import ComractUs from './components/ContactUs';
+import Arcade from './components/Arcade';
+import Keno from './components/Keno';
+import ESport from './components/ESport';
+import ContactUs from './components/ContactUs';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -87,7 +87,7 @@ const App = () => {
             <Route path="/poker" element={<Poker />} />
             <Route path="/lottery" element={<Lottery />} />
             <Route path="/e-sport" element={<ESport />} />
-            <Route path="/contact-us" element={<ComractUs />} />
+            <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </main>
         <BottomNav />
