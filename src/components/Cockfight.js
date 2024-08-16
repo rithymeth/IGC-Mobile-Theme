@@ -73,8 +73,8 @@ png     {fishingGames.map((game, index) => (
               />
             </div>
             <div style={{ padding: '20px' }}>
-              <h3 style={{ color: '#E63946', marginTop: 0, marginBottom: '10px', fontSize: '1.4rem' }}>{game.name}</h3>
-              <button 
+              <h3 style={{ color: '#E63946', marginTop: 0, marginBottom: '10px', fontSize: '1rem', textAlign:'center' }}>{game.name}</h3>
+              {/* <button 
                 style={{
                   backgroundColor: '#E63946',
                   color: '#ffffff',
@@ -90,7 +90,7 @@ png     {fishingGames.map((game, index) => (
                 onMouseLeave={(e) => e.target.style.backgroundColor = '#E63946'}
               >
                 Start Fishing
-              </button>
+              </button> */}
             </div>
           </div>
         ))}

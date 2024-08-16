@@ -73,8 +73,8 @@ const Sports = () => {
               />
             </div>
             <div style={{ padding: '20px' }}>
-              <h3 style={{ color: '#E63946', marginTop: 0, marginBottom: '10px', fontSize: '1.4rem' }}>{sport.name}</h3>
-              <button 
+              <h3 style={{ color: '#E63946', marginTop: 0, marginBottom: '10px', fontSize: '1rem', textAlign: 'center' }}>{sport.name}</h3>
+              {/* <button 
                 style={{
                   backgroundColor: '#E63946',
                   color: '#ffffff',
@@ -90,7 +90,7 @@ const Sports = () => {
                 onMouseLeave={(e) => e.target.style.backgroundColor = '#E63946'}
               >
                 Place Bet
-              </button>
+              </button> */}
             </div>
           </div>
         ))}

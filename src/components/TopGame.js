@@ -82,8 +82,8 @@ const TopGame = () => {
             </div>
             <div style={{ padding: '15px' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '5px', color: 'var(--on-surface-color)' }}>{game.name}</h3>
-              <p style={{ fontSize: '0.9rem', color: 'var(--secondary-color)', marginBottom: '10px' }}>{game.players} players</p>
-              <button style={{
+              {/* <p style={{ fontSize: '0.9rem', color: 'var(--secondary-color)', marginBottom: '10px' }}>{game.players} players</p> */}
+              {/* <button style={{
                 width: '100%',
                 backgroundColor: 'var(--primary-color)',
                 color: 'var(--on-primary-color)',
@@ -101,7 +101,7 @@ const TopGame = () => {
               onClick={() => console.log('Play Now:', game.name)}
               >
                 <FaPlay style={{ marginRight: '5px' }} /> Play Now
-              </button>
+              </button> */}
             </div>
           </div>
         ))}

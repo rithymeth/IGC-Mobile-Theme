@@ -83,7 +83,7 @@ const TrendingGames = () => {
                 color: 'var(--on-surface-color)',
                 textAlign: 'center'
               }}>{game.name}</h3>
-              <button style={{
+              {/* <button style={{
                 width: '100%',
                 backgroundColor: 'var(--primary-color)',
                 color: 'var(--on-primary-color)',
@@ -103,7 +103,7 @@ const TrendingGames = () => {
               onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
               >
                 <FaPlay style={{ marginRight: '5px' }} /> Play Now
-              </button>
+              </button> */}
             </div>
           </div>
         ))}
