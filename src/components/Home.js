@@ -42,10 +42,15 @@ const Home = () => {
         justifyContent: 'center',
         alignItems: 'center',
         height: '30vh',  // Full viewport height
+        marginBottom:'30px'
       }}>
         <PromoCard />
       </div>
+      <div style={{
+        marginBottom:'30px'
+      }}>
       <ProviderGame />
+      </div>
     </div>
   );
 };
