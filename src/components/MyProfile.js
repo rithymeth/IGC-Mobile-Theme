@@ -153,10 +153,16 @@ const MyProfile = () => {
                             <FaUser style={{ marginRight: '10px' }} />
                             {username}
                         </h2>
+                        {errors.username && (
+                            <p style={{ color: 'red', marginBottom: '10px' }}>{errors.username}</p>
+                        )}
                         <p style={{ color: 'var(--secondary-text-color, #666666)', marginBottom: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                             <FaEnvelope style={{ marginRight: '10px' }} />
                             {email}
                         </p>
+                        {errors.email && (
+                            <p style={{ color: 'red', marginBottom: '10px' }}>{errors.email}</p>
+                        )}
                         <button
                             onClick={handleEditProfile}
                             style={{
@@ -299,6 +305,9 @@ const MyProfile = () => {
                                         fontSize: '1rem'
                                     }}
                                 />
+                                {errors.username && (
+                                    <p style={{ color: 'red', marginTop: '5px' }}>{errors.username}</p>
+                                )}
                             </div>
                             <div style={{ marginBottom: '30px' }}>
                                 <label style={{ display: 'block', marginBottom: '8px', color: '#FFFFFF', fontSize: '1rem' }}>Email</label>
@@ -316,6 +325,9 @@ const MyProfile = () => {
                                         fontSize: '1rem'
                                     }}
                                 />
+                                {errors.email && (
+                                    <p style={{ color: 'red', marginTop: '5px' }}>{errors.email}</p>
+                                )}
                             </div>
                             <div style={{ display: 'flex', justifyContent: 'space-between', gap: '15px' }}>
                                 <button

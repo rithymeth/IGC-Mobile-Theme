@@ -8,10 +8,10 @@ import BalanceDisplay from './BalanceDisplay';
 
 const Header = ({ darkMode, setDarkMode }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  // const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
-  const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
+  // const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
   const currentBalance = 0.00;
   return (
     <header style={{

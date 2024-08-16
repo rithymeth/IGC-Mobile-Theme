@@ -44,7 +44,6 @@ const DropdownMenu = ({ onClose }) => {
               cursor: 'pointer',
               transition: 'background-color 0.2s',
               fontWeight: 600,
-              color: item.path === '/' ? 'var(--primary-color)' : 'inherit',
               backgroundColor: index === 0 ? 'var(--primary-color)' : 'transparent',
               color: index === 0 ? 'var(--on-primary-color)' : 'inherit',
             }}
