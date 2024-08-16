@@ -118,7 +118,7 @@ const ProviderGame = () => {
             </div>
           ))}
         </div>
-        <button
+        {/* <button
           onClick={() => scroll('left')}
           style={{
             position: 'absolute',
@@ -159,7 +159,7 @@ const ProviderGame = () => {
           }}
         >
           <FaChevronRight />
-        </button>
+        </button> */}
       </div>
     </div>
   );
