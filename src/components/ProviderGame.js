@@ -1,8 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Provider from '../assets/1.png';
-import Provider1 from '../assets/2.png';
-import Provider2 from '../assets/3.png';
+import Provider from '../assets/icg-gaming-1.png';
+import Provider2 from '../assets/fc.png';
+import Provider1 from '../assets/royal.png';
 import { FaChevronLeft, FaChevronRight, FaSearch } from 'react-icons/fa';
 
 const ProviderGame = () => {
@@ -15,8 +15,8 @@ const ProviderGame = () => {
     { id: 2, name: 'Provider 2', image: Provider1, link: '/provider2' },
     { id: 3, name: 'Provider 3', image: Provider2, link: '/provider3' },
     { id: 4, name: 'Provider 4', image: Provider, link: '/provider4' },
-    { id: 5, name: 'Provider 5', image: Provider1, link: '/provider5' },
     { id: 6, name: 'Provider 6', image: Provider2, link: '/provider6' },
+    { id: 5, name: 'Provider 5', image: Provider1, link: '/provider5' },
     // Add more providers as needed
   ];
 
@@ -115,11 +115,6 @@ const ProviderGame = () => {
                   marginBottom: '10px',
                 }}
               />
-              <p style={{
-                color: '#fff',
-                fontSize: '14px',
-                margin: '0',
-              }}>{provider.name}</p>
             </div>
           ))}
         </div>

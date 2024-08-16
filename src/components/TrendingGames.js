@@ -1,15 +1,15 @@
 import React from 'react';
 import { FaPlay, FaFire } from 'react-icons/fa';
-import slotImage from '../assets/1.png';
-import casinoImage from '../assets/2.png';
-import crashGameImage from '../assets/3.png';
-import fishingGameImage from '../assets/1.png';
+import slotImage from '../assets/afb.png';
+import casinoImage from '../assets/afb2.jpg';
+import crashGameImage from '../assets/dg99.jpg';
+import fishingGameImage from '../assets/sexy.jpg';
 
 const games = [
-  { name: 'Slot', image: slotImage, players: 1200 },
-  { name: 'Casino', image: casinoImage, players: 980 },
-  { name: 'Crash Game', image: crashGameImage, players: 1500 },
-  { name: 'Fishing', image: fishingGameImage, players: 850 },
+  { name: 'AFB Casino', image: slotImage, players: 1200 },
+  { name: 'AFB Sports', image: casinoImage, players: 980 },
+  { name: 'DG Casino', image: crashGameImage, players: 1500 },
+  { name: 'Sexy Casino', image: fishingGameImage, players: 850 },
   // Add more games as needed
 ];
 

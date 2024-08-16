@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import slotImage from '../assets/1.png';
-import rouletteImage from '../assets/2.png';
-import blackjackImage from '../assets/3.png';
-import pokerImage from '../assets/1.png';
+import slotImage from '../assets/GoRush.png';
+import rouletteImage from '../assets/NekoFortune.jpg';
+import blackjackImage from '../assets/manekiNeko.jpg';
+import pokerImage from '../assets/FortuneTiger.jpg';
 import { FaStar, FaPlay } from 'react-icons/fa'; // Import icons
 
 const games = [
-  { name: 'Slots', image: slotImage, rating: 4.5, players: 1200 },
-  { name: 'Roulette', image: rouletteImage, rating: 4.2, players: 800 },
-  { name: 'Blackjack', image: blackjackImage, rating: 4.7, players: 950 },
-  { name: 'Poker', image: pokerImage, rating: 4.8, players: 1500 },
+  { name: 'Go Rush', image: slotImage, rating: 4.5, players: 1200 },
+  { name: 'Neko Fortune', image: rouletteImage, rating: 4.2, players: 800 },
+  { name: 'Maneki Neko', image: blackjackImage, rating: 4.7, players: 950 },
+  { name: 'Fortune Tiger', image: pokerImage, rating: 4.8, players: 1500 },
 ];
 
 const TopGame = () => {
