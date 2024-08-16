@@ -31,7 +31,7 @@ const ProviderGame = () => {
   return (
     <div style={{
       padding: '20px',
-      backgroundColor: '#1a1a1a',
+      backgroundColor: 'var(--surface-color)',
       borderRadius: '10px',
       maxWidth: '800px',
       margin: '0 auto',

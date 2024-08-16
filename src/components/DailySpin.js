@@ -25,7 +25,7 @@ const DailySpin = () => {
   };
 
   return (
-    <section style={{ padding: '20px', maxWidth: '450px', margin: '0 auto', backgroundColor: 'var(--surface-color)', borderRadius: '12px', boxShadow: '0 4px 15px var(--shadow-color)' }}>
+    <section style={{ padding: '20px', maxWidth: '450px', margin: '0 auto', backgroundColor: 'var(--on-surface-color)', borderRadius: '12px', boxShadow: '0 4px 15px var(--shadow-color)' }}>
       <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '15px', color: 'var(--primary-color)', textAlign: 'center' }}>Daily Spin</h2>
       <div style={{ textAlign: 'center' }}>
         <div style={{
@@ -38,7 +38,7 @@ const DailySpin = () => {
           justifyContent: 'center',
           alignItems: 'center',
           fontSize: '1.2rem',
-          color: 'var(--on-primary-color)',
+          color: 'var(--primary-color)',
           transition: 'transform 3s ease',
           transform: spinning ? 'rotate(1080deg)' : 'rotate(0deg)',
         }}>

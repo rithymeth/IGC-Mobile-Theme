@@ -44,7 +44,7 @@ const Categories = () => {
       padding: '20px', 
       maxWidth: '450px', 
       margin: '0 auto', 
-      backgroundColor: '#1f1f1f', 
+      backgroundColor: 'var(--surface-color)', 
       borderRadius: '8px', 
       boxShadow: '0 2px 5px var(--shadow-color)',
       position: 'relative'

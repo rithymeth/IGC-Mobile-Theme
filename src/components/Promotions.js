@@ -20,7 +20,7 @@ const Promotions = () => {
   const styles = {
     section: {
       padding: '20px',
-      backgroundColor: '#1e1e1e',
+      backgroundColor: 'var(--surface-color)',
       color: 'white',
     },
     categoryTabs: {

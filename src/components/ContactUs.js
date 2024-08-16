@@ -17,7 +17,7 @@ const ContactUs = () => {
 
   return (
     <div style={{
-      backgroundColor: '#1f1f1f',
+      backgroundColor: 'var(--surface-color)',
       padding: '30px',
       borderRadius: '15px',
       maxWidth: '800px',

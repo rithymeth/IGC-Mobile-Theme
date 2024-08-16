@@ -24,8 +24,8 @@ const Achievements = () => {
           }}>
             <span style={{ fontSize: '2rem', marginRight: '15px' }}>{achievement.icon}</span>
             <div>
-              <p style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '5px', color: 'var(--on-surface-color)' }}>{achievement.name}</p>
-              <p style={{ color: 'var(--secondary-color)', fontSize: '0.9rem' }}>{achievement.description}</p>
+              <p style={{ fontSize: '1.1rem', fontWeight: 600, marginBottom: '5px', color: 'var(--surface-color)' }}>{achievement.name}</p>
+              <p style={{ color: 'var(--surface-color)', fontSize: '0.9rem' }}>{achievement.description}</p>
             </div>
           </li>
         ))}
