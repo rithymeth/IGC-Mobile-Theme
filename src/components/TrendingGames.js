@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPlay, FaFire } from 'react-icons/fa';
+import { FaFire } from 'react-icons/fa';
 import slotImage from '../assets/afb.png';
 import casinoImage from '../assets/afb2.jpg';
 import crashGameImage from '../assets/dg99.jpg';
@@ -83,27 +83,6 @@ const TrendingGames = () => {
                 color: 'var(--on-surface-color)',
                 textAlign: 'center'
               }}>{game.name}</h3>
-              {/* <button style={{
-                width: '100%',
-                backgroundColor: 'var(--primary-color)',
-                color: 'var(--on-primary-color)',
-                border: 'none',
-                padding: '10px',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                fontWeight: 600,
-                fontSize: '0.9rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                transition: 'background-color 0.3s, transform 0.2s',
-              }}
-              onClick={() => console.log('Play Now:', game.name)}
-              onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-              onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
-              >
-                <FaPlay style={{ marginRight: '5px' }} /> Play Now
-              </button> */}
             </div>
           </div>
         ))}

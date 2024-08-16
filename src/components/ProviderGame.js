@@ -3,11 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import Provider from '../assets/icg-gaming-1.png';
 import Provider2 from '../assets/fc.png';
 import Provider1 from '../assets/royal.png';
-import { FaChevronLeft, FaChevronRight, FaSearch } from 'react-icons/fa';
 
 const ProviderGame = () => {
   const navigate = useNavigate();
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm] = useState('');
   const scrollContainerRef = useRef(null);
 
   const providers = [
@@ -28,12 +27,6 @@ const ProviderGame = () => {
     provider.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const scroll = (direction) => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = direction === 'left' ? -200 : 200;
-      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  };
 
   return (
     <div style={{
@@ -50,33 +43,7 @@ const ProviderGame = () => {
         textAlign: 'center',
       }}>Game Providers</h2>
 
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        marginBottom: '20px',
-        position: 'relative',
-      }}>
-        <FaSearch style={{
-          position: 'absolute',
-          left: '10px',
-          color: '#888',
-        }} />
-        <input
-          type="text"
-          placeholder="Search providers..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          style={{
-            width: '100%',
-            padding: '10px 10px 10px 40px',
-            fontSize: '16px',
-            backgroundColor: '#2a2a2a',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '5px',
-          }}
-        />
-      </div>
+
 
       <div style={{ position: 'relative' }}>
         <div
@@ -118,48 +85,6 @@ const ProviderGame = () => {
             </div>
           ))}
         </div>
-        {/* <button
-          onClick={() => scroll('left')}
-          style={{
-            position: 'absolute',
-            left: '0',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            background: 'rgba(0,0,0,0.5)',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '50%',
-            width: '40px',
-            height: '40px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            cursor: 'pointer',
-          }}
-        >
-          <FaChevronLeft />
-        </button>
-        <button
-          onClick={() => scroll('right')}
-          style={{
-            position: 'absolute',
-            right: '0',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            background: 'rgba(0,0,0,0.5)',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '50%',
-            width: '40px',
-            height: '40px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            cursor: 'pointer',
-          }}
-        >
-          <FaChevronRight />
-        </button> */}
       </div>
     </div>
   );

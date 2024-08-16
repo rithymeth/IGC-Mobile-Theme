@@ -3,7 +3,7 @@ import slotImage from '../assets/GoRush.png';
 import rouletteImage from '../assets/NekoFortune.jpg';
 import blackjackImage from '../assets/manekiNeko.jpg';
 import pokerImage from '../assets/FortuneTiger.jpg';
-import { FaStar, FaPlay } from 'react-icons/fa'; // Import icons
+import { FaStar } from 'react-icons/fa'; // Import icons
 
 const games = [
   { name: 'Go Rush', image: slotImage, rating: 4.5, players: 1200 },
@@ -82,26 +82,6 @@ const TopGame = () => {
             </div>
             <div style={{ padding: '15px' }}>
               <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '5px', color: 'var(--on-surface-color)' }}>{game.name}</h3>
-              {/* <p style={{ fontSize: '0.9rem', color: 'var(--secondary-color)', marginBottom: '10px' }}>{game.players} players</p> */}
-              {/* <button style={{
-                width: '100%',
-                backgroundColor: 'var(--primary-color)',
-                color: 'var(--on-primary-color)',
-                border: 'none',
-                padding: '10px',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                fontWeight: 600,
-                fontSize: '0.9rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                transition: 'background-color 0.3s',
-              }}
-              onClick={() => console.log('Play Now:', game.name)}
-              >
-                <FaPlay style={{ marginRight: '5px' }} /> Play Now
-              </button> */}
             </div>
           </div>
         ))}
