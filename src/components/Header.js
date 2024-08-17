@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import DropdownMenu from './DropdownMenu';
 // import SearchBar from './SearchBar';
 import ProfileImage from '../assets/1.png'; // Ensure you have an actual profile image path
-import Logo from '../assets/logo.png';
+import LogoLight from '../assets/logo1.png';
+import LogoDark from '../assets/logo.png';
 import BalanceDisplay from './BalanceDisplay';
-
 
 const Header = ({ darkMode, setDarkMode }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -13,6 +14,7 @@ const Header = ({ darkMode, setDarkMode }) => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   // const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
   const currentBalance = 0.00;
+
   return (
     <header style={{
       backgroundColor: 'var(--surface-color)',
@@ -36,7 +38,14 @@ const Header = ({ darkMode, setDarkMode }) => {
 
         <div onClick={toggleDropdown} style={{ cursor: 'pointer', fontSize: '1.5rem' }}>☰</div>
         <h1 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 700, color: 'var(--primary-color)' }}>
-          <img src={Logo} alt='Icg Logo' width='120px' />
+          <Link to="/">
+            <img 
+              src={darkMode ? LogoDark : LogoLight} 
+              alt='Icg Logo' 
+              width='120px'
+              style={{ transition: 'opacity 0.3s' }}
+            />
+          </Link>
         </h1>
         <div style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
           <span onClick={() => setDarkMode(!darkMode)} style={{ marginRight: '15px', fontSize: '1.2rem', cursor: 'pointer' }}>
