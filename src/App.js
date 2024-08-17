@@ -51,8 +51,7 @@ const App = () => {
           flex: 1,
           overflowY: 'auto',
           padding: '20px',
-          paddingTop: '120px',
-          paddingBottom: '80px',
+          paddingTop: '60px',
         }}>
           <Routes>
             <Route path="/" element={<Home />} />
