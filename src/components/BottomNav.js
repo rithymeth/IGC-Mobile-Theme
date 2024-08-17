@@ -14,7 +14,7 @@ const BottomNav = () => {
     <nav style={{
       display: 'flex',
       justifyContent: 'space-around',
-      padding: '10px 0',
+      padding: '5px 0', // Reduced padding
       backgroundColor: 'var(--surface-color)',
       position: 'fixed',
       bottom: 0,
@@ -24,8 +24,8 @@ const BottomNav = () => {
       maxWidth: '480px',
       margin: '0 auto',
       boxShadow: '0 -2px 10px var(--shadow-color)',
-      borderTopLeftRadius: '20px',
-      borderTopRightRadius: '20px',
+      borderTopLeftRadius: '15px', // Slightly reduced border radius
+      borderTopRightRadius: '15px',
     }}>
       {navItems.map((item, index) => (
         <NavLink 
@@ -37,11 +37,11 @@ const BottomNav = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            fontSize: '12px',
+            fontSize: '10px', // Reduced font size
             color: 'var(--on-surface-color)',
             textDecoration: 'none',
             transition: 'color 0.3s ease-in-out',
-            padding: '10px',
+            padding: '5px', // Reduced padding
             position: 'relative',
             flex: '1',
           }}
@@ -50,16 +50,16 @@ const BottomNav = () => {
           }}
         >
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div style={{ fontSize: '24px' }}>{item.icon}</div>
-            <span style={{ marginTop: '5px' }}>{item.name}</span>
+            <div style={{ fontSize: '20px' }}>{item.icon}</div>
+            <span style={{ marginTop: '2px' }}>{item.name}</span>
           </div>
           <div style={{
             position: 'absolute',
-            bottom: '-4px',
+            bottom: '-2px', // Moved up slightly
             left: '50%',
             transform: 'translateX(-50%)',
-            width: '8px',
-            height: '8px',
+            width: '6px', // Reduced size
+            height: '6px', // Reduced size
             borderRadius: '50%',
             backgroundColor: 'var(--primary-color)',
             opacity: '0',
